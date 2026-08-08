@@ -1,0 +1,75 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-sans: 'DM Sans', 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    --font-mono: 'JetBrains Mono', monospace;
+    
+    --bg-dark: #07090f;
+    --bg-elevated: #0e121b;
+    --bg-card: #121826;
+    --bg-soft: #171e2e;
+    --border: rgba(255, 255, 255, 0.08);
+    --border-strong: rgba(255, 255, 255, 0.16);
+  }
+
+  body {
+    font-family: var(--font-sans);
+    background-color: var(--bg-dark);
+    background-image: 
+      radial-gradient(1200px 600px at 10% -10%, rgba(109, 94, 252, 0.22), transparent 55%),
+      radial-gradient(900px 500px at 100% 0%, rgba(34, 211, 166, 0.15), transparent 50%),
+      radial-gradient(800px 400px at 50% 100%, rgba(59, 130, 246, 0.1), transparent 60%);
+    color: #f3f6ff;
+  }
+}
+
+.font-mono-code {
+  font-family: var(--font-mono);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: rgba(7, 9, 15, 0.8);
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+/* Glass & Glow utilities */
+.glass-panel {
+  background: rgba(18, 24, 38, 0.75);
+  backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.09);
+}
+
+.glow-emerald {
+  box-shadow: 0 0 25px -5px rgba(34, 211, 166, 0.3);
+}
+
+.glow-indigo {
+  box-shadow: 0 0 25px -5px rgba(109, 94, 252, 0.35);
+}
+
+.gradient-text-emerald-indigo {
+  background: linear-gradient(135deg, #ffffff 10%, #79efc8 45%, #8b7cff 80%, #38bdf8 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.gradient-text-vibrant {
+  background: linear-gradient(135deg, #34d399 0%, #38bdf8 50%, #818cf8 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+

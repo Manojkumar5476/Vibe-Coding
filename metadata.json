@@ -1,0 +1,6 @@
+{
+  "name": "ABTalks 60-Day Coding Challenge",
+  "description": "Daily proof-of-work coding challenge platform for college students with track selection, streak tracking, GitHub and LinkedIn submission, and multi-user leaderboard.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
